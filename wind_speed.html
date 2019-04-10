@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset='UTF-8'>
+        <title> Windspeed </title>
+        <!-- Bring in our bootstrap stylesheet -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><h1 class="latitude_css"> Latitude </h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="dropbtn" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                        <div class="dropdown">                           
+                            <div class="dropdown-content">
+                                <a href="temp.html"> Max Temperature </a>
+                                <a href="humidity.html"> Humidity </a>
+                                <a href="cloudiness.html"> Cloudiness </a>
+                                <a href="wind_speed.html"> Wind Speed</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html"> Comparison </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html"> Data </a>
+                    </li>                        
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class = "col-md-8"> 
+                    <div class="container-fluid">
+                        <div class="alert alert-light" role="alert">
+                            <div>
+                                <h1 class="headings"> Wind Speed </h1>
+                                <hr>
+                                <img src="Resources/assets/images/Fig4.png" alt="Latitude V.s Wind Speed" width=80% hspace=20>
+                            </div>
+                            <p>
+                                As for windspeed, data seems to suggest an average windspeed of 15 mph for most cities. In the graph, we observe a higher concentration of points for higher latitudes (40 Deg Latitude and higher) indicating higher windspeeds as latitude increases.    
+                            </p>
+                        </div>
+                    </div>
+					</div>
+				<div class = "col-md-4"> 
+                    <div class="container-fluid">
+                        <div class="alert alert-light" role="alert">
+                            <div>
+                                <h1 class="headings"> Visualizations </h1>
+                                <hr>
+                                <br>
+                                <p>
+                                    <center>
+                                        <a href="temp.html"><img src="Resources/assets/images/Fig1.png" href="#" alt="Latitude V.s Max Temperature" width="125px" hspace="5"></a>
+                                        <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" href="#" alt="Latitude V.s Humidity" width="125px" hspace="5"></a><br><br><br>
+                                        <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" href="#" alt="Latitude V.s Cloudiness" width="125px" hspace="5"></a>
+                                        <a href="wind_speed.html"><img src="Resources/assets/images/Fig4.png" href="#" alt="Latitude V.s Wind Speed" width="125px" hspace="5"></a>
+                                    </center>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
